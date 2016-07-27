@@ -1,0 +1,39 @@
+<div id="sb-site">
+        <div id="page-wrapper">
+            <div id="page-header" class="clearfix" ng-include="'views/layout/nav-header.html'"></div>
+            <!-- #page-header -->
+            <div id="page-sidebar" class="rm-transition" ng-include="'views/layout/nav.html'">
+            </div><!-- #page-sidebar -->
+
+            <div id="page-content-wrapper" class="rm-transition">
+                <div id="page-nav" ng-include="'views/layout/page-nav.html'"></div><!-- #page-nav -->
+                <div id="page-content" ui-view-container>
+                    <!-- <pre>{{ profile | json }}</pre> -->
+                    <div ui-view></div>
+
+                </div><!-- #page-content -->
+
+            </div><!-- #page-content-wrapper -->
+        </div><!-- #page-wrapper -->
+
+    </div><!-- #sb-site -->
+<div class="sb-slidebar sb-right sb-style-overlay" ng-include="'views/layout/rightsb.html'" ></div>
+
+<div class="sb-slidebar sb-left sb-style-overlay" ng-include="'views/layout/leftsb.html'"></div>
+
+
+<!-- WIDGETS -->
+
+
+
+    <!-- WIDGETS -->
+
+    <!-- Bootstrap Dropdown -->
+
+    <!-- <link rel="stylesheet" type="text/css" href="assets-minified/widgets/dropdown/dropdown.css"> -->
+    <script type="text/javascript" src="assets-minified/widgets/dropdown/dropdown.js"></script>
+
+    
+
+
+    <ng-include src="'views/layout/scripts.html'"></ng-include>

@@ -1,0 +1,101 @@
+/*Page Navigation*/
+#page-subnav li.active a{
+  border-bottom: #fa7753 solid 2px
+}
+
+/*Table action button*/
+.siri-table .action-btn {
+	cursor: pointer;
+}
+.siri-table td {
+	position: relative;
+}
+
+.siri-table a {
+	line-height: 44px;
+    position: relative;
+    display: block;
+    float: left;
+    width: 44px;
+    height: 44px;
+    margin: 3px 0 0;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.siri-table a .bs-badge {
+    line-height: 14px;
+    top: 2px;
+    left: 2px;
+    display: block;
+    width: 14px;
+    min-width: 14px;
+    height: 14px;
+    padding: 0;
+}
+
+/*Siri Page Side Bar*/
+#siri-wrapper {
+  padding-left: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+#siri-sidebar-wrapper {
+  margin-left: -250px;
+  left: 250px;
+  width: 250px;
+  background: #siri-CCC;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+}
+
+#siri-page-content-wrapper {
+  width: 100%;
+}
+
+.siri-sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width:767px) {
+
+    #siri-wrapper {
+      padding-left: 0;
+    }
+
+    #siri-sidebar-wrapper {
+      left: 0;
+    }
+
+    #siri-wrapper.active {
+      position: relative;
+      left: 250px;
+    }
+
+    #siri-wrapper.active #sidebar-wrapper {
+      left: 250px;
+      width: 250px;
+      transition: all 0.4s ease 0s;
+    }
+
+}
+
+/*Chat Box*/
+.siri-scrollable-lg {
+  height: 500px;
+}
+.siri-scrollable-md {
+  height: 380px;
+}
+.siri-scrollable-sm {
+  height: 250px;
+}
+

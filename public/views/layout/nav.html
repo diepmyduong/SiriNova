@@ -1,0 +1,463 @@
+<div id="page-sidebar-wrapper">
+    <div id="sidebar-top">
+        <ul class="nav nav-pills nav-justified">
+            <li class="active"><a href="#tab-example-1" data-toggle="tab"><i class="glyph-icon icon-users"></i></a></li>
+            <li><a href="#tab-example-2" data-toggle="tab"><i class="glyph-icon icon-bell"></i></a></li>
+            <li><a href="#tab-example-3" data-toggle="tab"><span class="small-badge bg-red"></span><i class="glyph-icon icon-bar-chart-o"></i></a></li>
+            <li><a href="#tab-example-4" data-toggle="tab"><i class="glyph-icon icon-cogs"></i></a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane clearfix fade active in" id="tab-example-1">
+
+                <div class="user-profile-sm clearfix">
+                    <img width="45" height="45" class="img-rounded" ng-src="{{currentAuth.photoURL}}" src="assets-minified/dummy-images/gravatar.jpg" alt="">
+                    <div class="user-welcome">
+                        Welcome back,
+                        <b>{{currentAuth.displayName}}</b>
+                    </div>
+                    <a href="#" title="" class="btn btn-sm btn-black-opacity-alt">
+                        <i class="glyph-icon icon-cog"></i>
+                    </a>
+                </div>
+
+            </div>
+            <div class="tab-pane clearfix fade" id="tab-example-2">
+                <ul class="notifications-box notifications-box-alt">
+                    <li>
+                        <span class="bg-purple icon-notification glyph-icon icon-users"></span>
+                        <span class="notification-text">This is an error notification</span>
+                        <div class="notification-time">
+                            a few seconds ago
+                            <span class="glyph-icon icon-clock-o"></span>
+                        </div>
+                        <a href="#" class="notification-btn btn btn-xs btn-black tooltip-button" data-placement="right" title="View details">
+                            <i class="glyph-icon icon-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="bg-warning icon-notification glyph-icon icon-ticket"></span>
+                        <span class="notification-text">This is a warning notification</span>
+                        <div class="notification-time">
+                            <b>15</b> minutes ago
+                            <span class="glyph-icon icon-clock-o"></span>
+                        </div>
+                        <a href="#" class="notification-btn btn btn-xs btn-black tooltip-button" data-placement="right" title="View details">
+                            <i class="glyph-icon icon-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="bg-green icon-notification glyph-icon icon-random"></span>
+                        <span class="notification-text font-green">A success message example.</span>
+                        <div class="notification-time">
+                            <b>2 hours</b> ago
+                            <span class="glyph-icon icon-clock-o"></span>
+                        </div>
+                        <a href="#" class="notification-btn btn btn-xs btn-black tooltip-button" data-placement="right" title="View details">
+                            <i class="glyph-icon icon-arrow-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-pane clearfix fade" id="tab-example-3">
+                <div class="info-box remove-border">
+                    <div class="chart-icon">
+                        <div class="infobox-sparkline"></div>
+                    </div>
+                    <b>Exchange rate</b>
+                    <span class="stats">
+                        <i class="glyph-icon icon-chevron-down font-red"></i>
+                        43.79
+                        <span class="font-green">+0.9</span>
+                    </span>
+                </div>
+            </div>
+            <div class="tab-pane clearfix fade" id="tab-example-4">
+                <div class="complete-user-profile">
+                    <h4>Complete your profile</h4>
+                    <div class="progressbar-small progressbar" data-value="75">
+                        <div class="progressbar-value bg-azure tooltip-button" title="" data-original-title="45%"></div>
+                    </div>
+                    <b>Next step:</b> <a href="#" title="Verify identity">Verify identity</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sidebar-menu">
+
+        <ul>
+            <li>
+                <a href="#" title="Mail">
+                    <i class="glyph-icon icon-envelope-o"></i>
+                    <span>Mail</span>
+                </a>
+                <ul>
+                    <li><a ui-sref="app.mail" title="Inbox"><span>Inbox</span></a></li>
+                </ul>
+            </li>
+            <!-- <li>
+                <a href="index.html" title="Dashboard">
+                    <i class="glyph-icon icon-linecons-tv"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Presentation websites">
+                    <i class="glyph-icon icon-linecons-cloud"></i>
+                    <span>Frontend presentation</span>
+                    <span class="bs-label label-success">
+                        32
+                    </span>
+                </a>
+                <ul>
+                    <li class="header"><span>Homepage</span></li>
+                    <li><a href="featured-area-1.html" title="Hero area 1"><span>Hero area 1</span></a></li>
+                    <li><a href="featured-area-2.html" title="Hero area 2"><span>Hero area 2</span></a></li>
+                    <li><a href="featured-area-3.html" title="Hero area 3"><span>Hero area 3</span></a></li>
+                    <li><a href="featured-area-4.html" title="Hero area 4"><span>Hero area 4</span></a></li>
+                    <li><a href="featured-area-5.html" title="Hero area 5"><span>Hero area 5</span></a></li>
+                    <li><a href="featured-area-6.html" title="Hero area 6"><span>Hero area 6</span></a></li>
+                    <li><a href="featured-area-7.html" title="Hero area 7"><span>Hero area 7</span></a></li>
+                    <li><a href="featured-area-8.html" title="Hero area 8"><span>Hero area 8</span></a></li>
+                    <li><a href="featured-area-9.html" title="Hero area 9"><span>Hero area 9</span></a></li>
+                    <li><a href="featured-area-10.html" title="Hero area 10"><span>Hero area 10</span></a></li>
+                    <li><a href="featured-area-11.html" title="Hero area 11"><span>Hero area 11</span></a></li>
+                    <li><a href="featured-area-12.html" title="Hero area 12"><span>Hero area 12</span></a></li>
+                    <li><a href="featured-area-13.html" title="Hero area 13"><span>Hero area 13</span></a></li>
+                    <li><a href="featured-area-14.html" title="Hero area 14"><span>Hero area 14</span></a></li>
+                    <li><a href="featured-area-15.html" title="Hero area 15"><span>Hero area 15</span></a></li>
+                    <li><a href="featured-area-16.html" title="Hero area 16"><span>Hero area 16</span></a></li>
+
+                    <li class="header"><span>Widgets</span></li>
+                    <li><a href="carousels.html" title="Carousels"><span>Carousels</span></a></li>
+                    <li><a href="slideshows.html" title="Slideshows"><span>Slideshows</span></a></li>
+
+                    <li class="header"><span>Portfolios</span></li>
+                    <li><a href="portfolio-2col.html" title="Portfolio 2 columns"><span>2 columns</span></a></li>
+                    <li><a href="portfolio-3col.html" title="Portfolio 2 columns"><span>3 columns</span></a></li>
+                    <li><a href="portfolio-4col.html" title="Portfolio 4 columns"><span>4 columns</span></a></li>
+                    <li><a href="portfolio-6col.html" title="Portfolio 6 columns"><span>6 columns</span></a></li>
+                    <li><a href="portfolio-fw1.html" title="Portfolio full width"><span>Full width</span></a></li>
+                    <li><a href="portfolio-fw2.html" title="Portfolio full width alternate"><span>Full width alternate</span></a></li>
+                    <li><a href="portfolio-masonry.html" title="Portfolio masonry"><span>Full masonry</span></a></li>
+
+                    <li class="header"><span>Elements</span></li>
+                    <li><a href="icon-boxes.html" title="Icon boxes"><span>Icon boxes</span></a></li>
+                    <li><a href="page-titles.html" title="Page titles"><span>Page titles</span></a></li>
+                    <li><a href="pricing-table.html" title="Pricing tables"><span>Pricing tables</span></a></li>
+                    <li><a href="testimonials.html" title="Testimonials"><span>Testimonials</span></a></li>
+
+                    <li class="header"><span>Footers</span></li>
+                    <li><a href="footer-1.html" title="Simple black footer"><span>Simple black footer</span></a></li>
+                    <li><a href="footer-2.html" title="Simple blue footer"><span>Simple blue footer</span></a></li>
+                    <li><a href="footer-3.html" title="Grid footer 1"><span>Grid footer 1</span></a></li>
+                    <li><a href="footer-4.html" title="Grid footer 2"><span>Grid footer 2</span></a></li>
+
+                    <li class="header"><span>Headers</span></li>
+                    <li><a href="header-1.html" title=""><span>White transparent header</span></a></li>
+                    <li><a href="header-2.html" title=""><span>Alternate dropdown menu</span></a></li>
+                    <li><a href="header-3.html" title=""><span>White header</span></a></li>
+                    <li><a href="header-4.html" title=""><span>Mega dropdown menu</span></a></li>
+                    <li><a href="header-5.html" title=""><span>Blue header</span></a></li>
+                    <li><a href="header-6.html" title=""><span>Transparent header</span></a></li>
+                </ul>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#" title="Applications">
+                    <i class="glyph-icon icon-linecons-shop"></i>
+                    <span>Applications</span>
+                </a>
+                <ul>
+                    <li class="header"><span>Mailbox</span></li>
+                    <li><a href="mailbox-inbox.html" title="Inbox"><span>Inbox</span></a></li>
+                    <li><a href="mailbox-inbox-alt.html" title="Inbox alternate"><span>Inbox alternate</span></a></li>
+                    <li><a href="mailbox-compose.html" title="Compose message"><span>Compose message</span></a></li>
+                    <li><a href="mailbox-message.html" title="View message"><span>View message</span></a></li>
+                </ul>
+                <ul>
+                    <li class="header"><span>Others</span></li>
+                    <li><a href="chat.html" title="Chat"><span>Chat</span></a></li>
+                    <li><a href="todo.html" title="Chat"><span>Checklist</span></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" title="Layouts">
+                    <i class="glyph-icon icon-linecons-desktop"></i>
+                    <span>Layouts</span>
+                </a>
+                <ul>
+                    <li class="header"><span>Pages</span></li>
+                    <li><a href="page-blank.html" title="Page blank"><span>Page blank</span></a></li>
+                    <li><a href="page-container.html" title="Page with container"><span>Page with container</span></a></li>
+                    <li><a href="page-single-wrapper.html" title="Page with single wrapper"><span>Page with single wrapper</span></a></li>
+                    <li><a href="page-multiple-wrappers.html" title="Page with multiple wrappers"><span>Page with multiple wrappers</span></a></li>
+                    <li><a href="page-scrollbar.html" title="Page with custom scrollbar"><span>Page with custom scrollbar</span></a></li>
+                    <li><a href="page-tabs.html" title="Page with tabs navigation"><span>Page with tabs navigation</span></a></li>
+
+                    <li class="header"><span>Navigation</span></li>
+                    <li><a href="navigation-menu-horizontal.html" title="Horizontal menu"><span>Horizontal menu</span></a></li>
+                    <li><a href="navigation-menu-horizontal-centered.html" title="Centered horizontal menu"><span>Centered horizontal menu</span></a></li>
+                    <li><a href="navigation-menu-collapsed.html" title="Collapsed horizontal menu"><span>Collapsed horizontal menu</span></a></li>
+
+                    <li class="header"><span>Breadcrumbs</span></li>
+                    <li><a href="breadcrumb-simple.html" title="Breadcrumb menu"><span>Breadcrumb menu</span></a></li>
+                    <li><a href="breadcrumb-sidebar-collapsed.html" title="Breadcrumb with collapsed menu"><span>Breadcrumb with collapsed menu</span></a></li>
+                </ul>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#" title="Extra pages">
+                    <i class="glyph-icon icon-linecons-params"></i>
+                    <span>Extra pages</span>
+                </a>
+                <ul>
+                    <li class="header"><span>Dashboards</span></li>
+                    <li><a href="index.html" title="Dashboard example 1"><span>Dashboard example 1</span></a></li>
+                    <li><a href="dashboard-2.html" title="Dashboard example 2"><span>Dashboard example 2</span></a></li>
+                    <li><a href="dashboard-3.html" title="Dashboard example 3"><span>Dashboard example 3</span></a></li>
+                    <li><a href="#" title="Dashboard example 4"><span>Dashboard example 4</span><span class="bs-label label-warning">SOON</span></a></li>
+
+                    <li class="header"><span>Others</span></li>
+                    <li><a href="helper-classes.html" title="Helper classes"><span>Helper classes</span></a></li>
+                    <li><a href="slidebars.html" title="Slidebars panels"><span>Slidebars panels</span></a></li>
+                    <li><a href="animations.html" title="Animations"><span>Animations</span></a></li>
+                    <li><a href="page-transitions.html" title="Page transitions"><span>Page transitions</span></a></li>
+
+                    <li class="header"><span>Lockscreens</span></li>
+                    <li><a href="lockscreen-page-1.html" target="_blank" title="Lockscreen example 1"><span>Lockscreen example 1</span></a></li>
+                    <li><a href="lockscreen-page-2.html" target="_blank" title="Lockscreen example 2"><span>Lockscreen example 2</span></a></li>
+                    <li><a href="lockscreen-page-3.html" target="_blank" title="Lockscreen example 3"><span>Lockscreen example 3</span></a></li>
+
+                    <li class="header"><span>Login pages</span></li>
+                    <li><a href="login-page-1.html" target="_blank" title="Login example 1"><span>Login example 1</span></a></li>
+                    <li><a href="login-page-2.html" target="_blank" title="Login example 2"><span>Login example 2</span></a></li>
+                    <li><a href="login-page-3.html" target="_blank" title="Login example 3"><span>Login example 3</span></a></li>
+                    <li><a href="login-page-4.html" target="_blank" title="Login example 4"><span>Login example 4</span></a></li>
+                    <li><a href="login-page-5.html" target="_blank" title="Login example 5"><span>Login example 5</span></a></li>
+
+                    <li class="header"><span>Server response</span></li>
+                    <li><a href="server-page-1.html" target="_blank" title="Server error example 1"><span>Server error example 1</span></a></li>
+                    <li><a href="server-page-2.html" target="_blank" title="Server error example 2"><span>Server error example 2</span></a></li>
+                    <li><a href="server-page-3.html" target="_blank" title="Server error example 3"><span>Server error example 3</span></a></li>
+                    <li><a href="server-page-4.html" target="_blank" title="Server error example 4"><span>Server error example 4</span></a></li>
+                </ul>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#" title="Widgets">
+                    <i class="glyph-icon icon-linecons-cog"></i>
+                    <span>Widgets</span>
+                </a>
+                <ul>
+                    <li><a href="accordions.html" title="Accordions"><span>Accordions</span></a></li>
+                    <li><a href="bs-carousel.html" title="Bootstrap carousel"><span>Bootstrap carousel</span></a></li>
+                    <li><a href="bs-datepicker.html" title="Bootstrap datepicker"><span>Bootstrap datepicker</span></a></li>
+                    <li><a href="calendar.html" title="Calendar"><span>Calendar</span></a></li>
+                    <li><a href="collapsable.html" title="Collapsable"><span>Collapsable</span></a></li>
+                    <li><a href="colorpicker.html" title="Colorpicker"><span>Colorpicker</span></a></li>
+                    <li><a href="custom-scrollbars.html" title="Custom scrollbars"><span>Custom scrollbars</span></a></li>
+                    <li><a href="dialogs.html" title="Dialogs"><span>Dialogs</span></a></li>
+                    <li><a href="dynamic-tables.html" title="Dynamic tables"><span>Dynamic tables</span></a></li>
+                    <li><a href="jgrowl-notifications.html" title="JGrowl notifications"><span>JGrowl notifications</span></a></li>
+                    <li><a href="jqueryui-datepicker.html" title="jQueryUI datepicker"><span>jQueryUI datepicker</span></a></li>
+                    <li><a href="lazyload.html" title="Images preloader"><span>Images preloader</span></a></li>
+                    <li><a href="loading-bar.html" title="Loading bar"><span>Loading bar</span></a></li>
+                    <li><a href="modals.html" title="Modals"><span>Modals</span></a></li>
+                    <li><a href="noty-notifications.html" title="Noty notifications"><span>Noty notifications</span></a></li>
+                    <li><a href="overlays.html" title="Overlays"><span>Overlays</span></a></li>
+                    <li><a href="popovers.html" title="Popovers"><span>Popovers</span></a></li>
+                    <li><a href="progress-bars.html" title="Progress bars"><span>Progress bars</span></a></li>
+                    <li><a href="sliders.html" title="Sliders"><span>Sliders</span></a></li>
+                    <li><a href="sortable.html" title="Sortable elements"><span>Sortable elements</span></a></li>
+                    <li><a href="tabs.html" title="Tabs"><span>Tabs</span></a></li>
+                    <li><a href="timepicker.html" title="Timepicker"><span>Timepicker</span></a></li>
+                    <li><a href="tooltips.html" title="Tooltips"><span>Tooltips</span></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" title="Elements">
+                    <i class="glyph-icon icon-linecons-beaker"></i>
+                    <span>Elements</span>
+                </a>
+                <ul>
+                    <li><a href="badges.html" title="Badges"><span>Badges</span></a></li>
+                    <li><a href="buttons.html" title="Buttons"><span>Buttons</span></a></li>
+                    <li><a href="content-boxes.html" title="Content boxes"><span>Content boxes</span></a></li>
+                    <li><a href="dashboard-boxes.html" title="Dashboard boxes"><span>Dashboard boxes</span></a></li>
+                    <li><a href="icons.html" title="Icons"><span>Icons</span></a></li>
+                    <li><a href="images.html" title="Images"><span>Images</span></a></li>
+                    <li><a href="labels.html" title="Labels"><span>Labels</span></a></li>
+                    <li><a href="navigation-menus.html" title="Menus"><span>Menus</span></a></li>
+                    <li><a href="panel-boxes.html" title="Panel boxes"><span>Panel boxes</span></a></li>
+                    <li><a href="plain-tables.html" title="Tables"><span>Tables</span></a></li>
+                    <li><a href="response-messages.html" title="Response messages"><span>Response messages</span></a></li>
+                    <li><a href="ribbons.html" title="Ribbons"><span>Ribbons</span></a></li>
+                    <li><a href="scrollable-boxes.html" title="Scrollable boxes"><span>Scrollable boxes</span></a></li>
+                    <li><a href="social-boxes.html" title="Social boxes"><span>Social boxes</span></a></li>
+                    <li><a href="spinners.html" title="Loading spinners"><span>Loading spinners</span></a></li>
+                    <li><a href="tile-boxes.html" title="Tile boxes"><span>Tile boxes</span></a></li>
+                    <li><a href="timeline.html" title="Timeline"><span>Timeline</span></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" title="Forms">
+                    <i class="glyph-icon icon-linecons-doc"></i>
+                    <span>Forms</span>
+                    <span class="small-badge bg-primary"></span>
+                </a>
+                <ul>
+                    <li><a href="forms-validation.html" title="Forms validation"><span>Forms validation</span></a></li>
+                    <li><a href="dropzone-uploader.html" title="Dropzone uploader"><span>Dropzone uploader</span></a></li>
+                    <li><a href="forms-elements.html" title="Forms elements"><span>Forms elements</span></a></li>
+                    <li><a href="image-crop.html" title="Image crop"><span>Image crop</span></a></li>
+                    <li><a href="input-masks.html" title="Input masks"><span>Input masks</span></a></li>
+                    <li><a href="knobs.html" title="Input knobs"><span>Input knobs</span></a></li>
+                    <li><a href="multi-upload.html" title="Multi uploader"><span>Multi uploader</span></a></li>
+                    <li><a href="wizard.html" title="Wizard"><span>Wizard</span></a></li>
+                    <li><a href="wysiwyg-editor.html" title="WYSIWYG Editors"><span>WYSIWYG Editors</span></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" title="Maps">
+                    <i class="glyph-icon icon-linecons-location"></i>
+                    <span>Maps</span>
+                    <span class="bs-label label-info">3</span>
+                </a>
+                <ul>
+                    <li><a href="google-maps.html" title="Google maps"><span>Google maps</span></a></li>
+                    <li><a href="vector-maps.html" title="Vector maps"><span>Vector maps</span></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" title="Charts">
+                    <i class="glyph-icon icon-linecons-calendar"></i>
+                    <span>Charts</span>
+                </a>
+                <ul>
+                    <li><a href="justgage.html" title="JustGage"><span>JustGage</span></a></li>
+                    <li><a href="morris-charts.html" title="Morris charts"><span>Morris charts</span></a></li>
+                    <li><a href="pie-gages.html" title="PieGages charts"><span>PieGages charts</span></a></li>
+                    <li><a href="sparklines.html" title="Sparklines charts"><span>Sparklines charts</span></a></li>
+                    <li><a href="xcharts.html" title="xCharts"><span>xCharts</span></a></li>
+                </ul>
+            </li> -->
+        </ul>
+
+    </div><!-- #sidebar-menu -->
+
+    <div class="divider"></div>
+    <div id="sidebar-files" class="mobile-hidden">
+
+        <div class="divider-header">Upload Files</div>
+
+        <ul class="files-box">
+            <div ng-repeat="(key,file) in uploadFile.array">
+                <li>
+                    <i class="files-icon glyph-icon font-red icon-file-archive-o"></i>
+                    <div class="files-content">
+                        <b>{{file.name}}</b>
+                        <div class="files-date">
+                            <i class="glyph-icon icon-clock-o"></i>
+                            size: 
+                            <b ng-if="file.size < (1024*1024)">{{file.size/1024 | number:2}} KB</b>
+                            <b ng-if="file.size >= (1024*1024)">{{file.size/(1024*1024) | number:2}} MB</b>
+                            <div class="progress-title" ng-if="file.processing">
+                                Code optimizations
+                                <b>{{file.processing | number:0}}%</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="files-buttons">
+                        <a ng-click="startUpload(key)" class="btn btn-xs hover-info tooltip-button" data-placement="right" title="Upload">
+                            <i class="glyph-icon icon-cloud-download"></i>
+                        </a>
+                        <a ng-click="removeUploadFile(key)" class="btn btn-xs hover-danger tooltip-button" data-placement="right" title="Delete">
+                            <i class="glyph-icon icon-times"></i>
+                        </a>
+                    </div>
+                </li>
+                <li ng-if="file.processing">
+                    <div class="progressbar-smaller progressbar" progress-value="{{file.processing}}">
+                        <div class="progressbar-value bg-yellow"></div>
+                    </div>
+                </li>
+            </div>
+            <!-- <li>
+                <i class="files-icon glyph-icon font-red icon-file-archive-o"></i>
+                <div class="files-content">
+                    <b>blog_export.zip</b>
+                    <div class="files-date">
+                        <i class="glyph-icon icon-clock-o"></i>
+                        added on <b>22.10.2014</b>
+                    </div>
+                </div>
+                <div class="files-buttons">
+                    <a href="#" class="btn btn-xs hover-info tooltip-button" data-placement="right" title="Download">
+                        <i class="glyph-icon icon-cloud-download"></i>
+                    </a>
+                    <a href="#" class="btn btn-xs hover-danger tooltip-button" data-placement="right" title="Delete">
+                        <i class="glyph-icon icon-times"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <i class="files-icon glyph-icon icon-file-code-o"></i>
+                <div class="files-content">
+                    <b>homepage-test.html</b>
+                    <div class="files-date">
+                        <i class="glyph-icon icon-clock-o"></i>
+                        added  <b>19.10.2014</b>
+                    </div>
+                </div>
+                <div class="files-buttons">
+                    <a href="#" class="btn btn-xs hover-info tooltip-button" data-placement="right" title="Download">
+                        <i class="glyph-icon icon-cloud-download"></i>
+                    </a>
+                    <a href="#" class="btn btn-xs hover-danger tooltip-button" data-placement="right" title="Delete">
+                        <i class="glyph-icon icon-times"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <i class="files-icon glyph-icon font-yellow icon-file-image-o"></i>
+                <div class="files-content">
+                    <b>monthlyReport.jpg</b>
+                    <div class="files-date">
+                        <i class="glyph-icon icon-clock-o"></i>
+                        added on <b>10.9.2014</b>
+                    </div>
+                </div>
+                <div class="files-buttons">
+                    <a href="#" class="btn btn-xs hover-info tooltip-button" data-placement="right" title="Download">
+                        <i class="glyph-icon icon-cloud-download"></i>
+                    </a>
+                    <a href="#" class="btn btn-xs hover-danger tooltip-button" data-placement="right" title="Delete">
+                        <i class="glyph-icon icon-times"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <i class="files-icon glyph-icon font-green icon-file-word-o"></i>
+                <div class="files-content">
+                    <b>new_presentation.doc</b>
+                    <div class="files-date">
+                        <i class="glyph-icon icon-clock-o"></i>
+                        added on <b>5.9.2014</b>
+                    </div>
+                </div>
+                <div class="files-buttons">
+                    <a href="#" class="btn btn-xs hover-info tooltip-button" data-placement="right" title="Download">
+                        <i class="glyph-icon icon-cloud-download"></i>
+                    </a>
+                    <a href="#" class="btn btn-xs hover-danger tooltip-button" data-placement="right" title="Delete">
+                        <i class="glyph-icon icon-times"></i>
+                    </a>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+</div><!-- #page-sidebar-wrapper -->

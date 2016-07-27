@@ -1,0 +1,58 @@
+<div class="dropdown sp-btn">
+                        <a href="#" class="btn btn-primary popover-button" data-toggle="dropdown">
+                            <i class="glyph-icon icon-picture-o opacity-80"></i>
+                            <i class="glyph-icon icon-caret-down"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="box-sm text-center">
+                                <div class="popover-title display-block clearfix pad10A">
+                                    Layout color
+                                </div>
+                                <div class="pad10A clearfix change-layout-theme">
+                                    <a href="javascript:;" class="choose-theme" framework-color="default" layout-color="light" title="Light">
+                                        <span style="background: #fafafa;"></span>
+                                    </a>
+                                    <a href="javascript:;" class="choose-theme" framework-color="default" layout-color="default" title="Default">
+                                        <span style="background: #232323;"></span>
+                                    </a>
+                                </div>
+                                <div class="popover-title display-block clearfix pad10A">
+                                    Framework color
+                                </div>
+                                <div class="pad10A clearfix change-layout-theme">
+                                    <a href="javascript:;" class="choose-theme" framework-color="default" layout-color="light" title="Default">
+                                        <span style="background: #f87500;"></span>
+                                    </a>
+                                    <a href="javascript:;" class="choose-theme" framework-color="blue" layout-color="default" title="Blue">
+                                        <span style="background: #0084ff;"></span>
+                                    </a>
+                                    <a href="javascript:;" class="choose-theme" framework-color="green" layout-color="light" title="Green">
+                                        <span style="background: #36be00;"></span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <ul id="page-subnav">
+                        <li ui-sref-active="active"><a ui-sref="app.folder" title="Social boxes"><span>All Files</span></a></li>
+                        <li ui-sref-active="active"><a ui-sref="app.viewer" title="Loading spinners"><span>DICOM Viewer</span></a></li>
+                        <li ui-sref-active="active"><a ui-sref="app.messages" title="Tile boxes"><span>Messages</span></a></li>
+                    </ul>
+                    <div id="page-nav-right">
+                        <input type="file" id="upload" name="upload" style="display:none" multiple fileread="uploadFile.src"/>
+                        <a href="#" title="" class="btn no-shadow" onclick="document.getElementById('upload').click(); return false" >
+                            <i class="glyph-icon icon-upload" on-cli></i>
+                            Upload
+                        </a>
+                        <!-- <a href="#" title="" class="btn sb-open-left no-shadow updateEasyPieChart">
+                            <i class="glyph-icon icon-cogs"></i>
+                            Statistics
+                        </a> -->
+                        <a href="#" title="" class="btn sb-open-right no-shadow updateEasyPieChart">
+                            <i class="glyph-icon icon-bullhorn"></i>
+                            Chat
+                        </a>
+                    </div>
+
+                    

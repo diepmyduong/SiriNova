@@ -1,0 +1,42 @@
+
+<div class="row">
+    <table class="table table-hover siri-table">
+        <thead>
+        <tr style="text-align:left">
+            <th>Patient</th>
+            <th>Study</th>
+            <th>Date</th>
+            <th></th>
+            <th>Comments</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-dblclick="rowClick(file)" ng-repeat="(key,file) in files" ng-if="!loading">
+            <td>{{file.patientName}}</td>
+            <td>{{file.studyDescription}}</td>
+            <td>{{file.timeCreated}}</td>
+            <td>
+                <a class="btn"><i class="glyph-icon icon-share"></i></a>
+                <a class="btn"><i class="glyph-icon icon-cloud"></i></a>
+                <a class="btn"><i class="glyph-icon icon-lock"></i></a>
+            </td>
+            <td>
+                <a class="btn">
+                    <i class="glyph-icon icon-comment"><span class="bs-badge badge-absolute bg-red">2</span></i>  
+                </a>
+            </td>
+        </tr>
+        
+        </tbody>
+    </table>
+    <div class="loading-stick" ng-if="loading">
+        <div class="stick bg-green"></div>
+        <div class="stick bg-green"></div>
+        <div class="stick bg-green"></div>
+        <div class="stick bg-green"></div>
+        <div class="stick bg-green"></div>
+        <div class="stick bg-green"></div>
+        <h1>Loading...</h1>
+    </div>
+</div>
+<div class="row"></div>

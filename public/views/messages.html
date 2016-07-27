@@ -1,0 +1,76 @@
+
+<div class="content-box">
+    <h3 class="content-box-header bg-blue text-left">
+        <i class="glyph-icon icon-comments"></i>
+        {{room.caption}}
+    </h3>
+    <div class="content-box-wrapper"  >
+        <div  class="scrollable-content scrollable-lg siri-scrollable-lg" id="chat-box" scrollable-nice tabindex="5000" >
+
+            <ul class="chat-box">
+                <div ng-repeat="(key, message) in messages">
+                    <!-- Out Messages -->
+                    <li ng-if="message.senderId == currentAuth.uid">
+                        <div class="chat-author">
+                            <img width="36" src="../assets-minified/dummy-images/gravatar.jpg" alt="">
+                        </div>
+                        <div class="popover left no-shadow">
+                            <div class="arrow"></div>
+                            <div class="popover-content">
+                                {{message.message}}
+                                <div class="chat-time">
+                                    <i class="glyph-icon icon-clock-o"></i>
+                                    a few seconds ago
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- In Message -->
+                    <li class="float-left" ng-if="message.senderId != currentAuth.uid">
+                        <div class="chat-author">
+                            <img width="36" src="../assets-minified/dummy-images/gravatar.jpg" alt="">
+                        </div>
+                        <div class="popover right no-shadow">
+                            <div class="arrow"></div>
+                            <div class="popover-content">
+                                <h3>
+                                    <a href="#" title="Horia Simon">Horia Simon</a>
+                                    <div class="float-right">
+                                        <a href="#" class="btn glyph-icon icon-inbox font-gray tooltip-button" data-placement="bottom" title="" data-original-title="This chat line was received in the mail."></a>
+                                    </div>
+                                </h3>
+                                This comment line has a title (author name) and a right button panel.
+                                <div class="chat-time">
+                                    <i class="glyph-icon icon-clock-o"></i>
+                                    a few seconds ago
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                
+                
+            </ul>
+
+        </div>
+    </div>
+    <div class="button-pane pad10A">
+        <div class="input-group">
+            <input type="text" placeholder="Say something here..." class="form-control">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default" tabindex="-1"><i class="glyph-icon icon-mail-reply"></i></button>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu pull-right" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

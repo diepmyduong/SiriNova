@@ -1,0 +1,2 @@
+function progress(a,b){var c=a*b.width()/100;b.find(".progressbar-value").animate({width:c},500)}$(document).on("ready",function(){$(".progressbar").each(function(){var a=$(this),b=$(this).attr("data-value");progress(b,a)})});
+// $(function(){$("#header-right, .updateEasyPieChart, .complete-user-profile, #progress-dropdown, .sb-slidebar .scrollable-content").hover(function(){$(".progressbar").each(function(){var a=$(this),b=$(this).attr("data-value");progress(b,a)})})});

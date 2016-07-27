@@ -1,0 +1,140 @@
+<style type="text/css">
+
+    body {
+        background: #F5F5F5;
+    }
+    .vertical-center {
+      min-height: 100%;  /* Fallback for vh unit */
+      min-height: 100vh; /* You might also want to use
+                            'height' property instead.
+                            
+                            Note that for percentage values of
+                            'height' or 'min-height' properties,
+                            the 'height' of the parent element
+                            should be specified explicitly.
+      
+                            In this case the parent of '.vertical-center'
+                            is the <body> element */
+      /* Align the bootstrap's container vertically */
+        -webkit-box-align : center;
+      -webkit-align-items : center;
+           -moz-box-align : center;
+           -ms-flex-align : center;
+              align-items : center;
+      
+      /* In legacy web browsers such as Firefox 9
+         we need to specify the width of the flex container */
+      width: 100%;
+      
+      /* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers
+         hence the bootstrap's container won't be aligned to the center anymore.
+      
+         Therefore, we should use the following declarations to get it centered again */
+             -webkit-box-pack : center;
+                -moz-box-pack : center;
+                -ms-flex-pack : center;
+      -webkit-justify-content : center;
+              justify-content : center;
+    }
+
+</style>
+
+<div class="center-vertical vertical-center">
+    <div class="center-content">
+
+        <div class="col-md-6 center-margin">
+
+            <h3 class="text-center pad15B font-gray text-transform-upr font-size-23">Siri Nova <span class="opacity-80">v1.0</span></h3>
+            <div class="alert alert-danger" ng-if="error">
+                <strong>Error:</strong> {{error}}
+            </div>
+
+            <div class="content-box border-top border-red clearfix">
+                <div class="content-box-wrapper">
+
+                    <form class="col-md-7" name="userLogin" ng-submit="login()" novalidate>
+                        <div id="login-form">
+                            <div class="pad20A">
+
+                                <div class="form-group"> 
+                                    <label for="exampleInputEmail1">Email address:</label>
+                                    <span class="label label-danger" ng-show="userLogin.email.$touched && userLogin.email.$invalid">Email invalid</span>
+                                    <div class="input-group input-group-lg">
+                                        <span class="input-group-addon addon-inside bg-white font-primary">
+                                            <i class="glyph-icon icon-envelope-o"></i>
+                                        </span>
+                                        <input type="email" ng-model="user.email" ng-required="true"  class="form-control" name="email" placeholder="Enter Email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password:</label>
+                                    <span class="label label-danger" ng-show="userLogin.password.$touched && userLogin.password.$invalid">Password invalid</span>
+                                    <div class="input-group input-group-lg">
+                                        <span class="input-group-addon addon-inside bg-white font-primary">
+                                            <i class="glyph-icon icon-unlock-alt"></i>
+                                        </span>
+                                        <input type="password" ng-model="user.password" ng-required="true"  class="form-control" name="password" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="row mrg15B">
+                                    <div class="checkbox-primary col-md-6" style="height: 20px;">
+                                        <label>
+                                            <input type="checkbox" id="loginCheckbox1" class="custom-checkbox">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-block btn-blue-alt" ng-disabled="userLogin.$invalid" ng-hide="logging">Login</button>
+                                    <button class="btn btn-block {{loggingBtn}}" ng-show="logging">{{loggingStatus}}</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                    <div class="col-md-3 col-md-offset-1" style="height: 287px;">
+
+                        <div class="center-vertical">
+                            <div class="center-content">
+
+                                <a href="#" class="btn btn-block btn-md bg-facebook">
+                                    <span class="glyph-icon icon-separator">
+                                        <i class="glyph-icon icon-facebook"></i>
+                                    </span>
+                                    <span class="button-content">
+                                        Connect with Facebook
+                                    </span>
+                                </a>
+                                <div class="mrg10A"></div>
+                                <a href="#" class="btn btn-block btn-md bg-twitter">
+                                    <span class="glyph-icon icon-separator">
+                                        <i class="glyph-icon icon-twitter"></i>
+                                    </span>
+                                    <span class="button-content">
+                                        Connect with Twitter
+                                    </span>
+                                </a>
+                                <div class="mrg10A"></div>
+                                <a href="#" class="btn btn-block btn-md bg-google">
+                                    <span class="glyph-icon icon-separator">
+                                        <i class="glyph-icon icon-google-plus"></i>
+                                    </span>
+                                    <span class="button-content">
+                                        Connect with Google+
+                                    </span>
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<ng-include src="'views/layout/scripts.html'"></ng-include>

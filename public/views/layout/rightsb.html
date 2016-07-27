@@ -1,0 +1,42 @@
+<div class="scrollable-content scrollable-nice">
+    <div class="divider-header">Online</div>
+    <ul class="chat-box">
+        <li ng-repeat="friend in friends" ng-if="friendProfiles[friend.$id].online">
+            <div class="status-badge">
+                <img class="img-circle" sr-src='{{friendProfiles[friend.$id].profileImage}}' src='images/users.png' width="40" height="40">
+                <div class="small-badge bg-green"></div>
+            </div>
+            <b>{{friendProfiles[friend.$id].username}}</b>
+            <p>{{friendProfiles[friend.$id].email}}</p>
+            <a ui-sref="app.messages({friend:friendProfiles[friend.$id]})" class="btn btn-md no-border radius-all-100 btn-black"><i class="glyph-icon icon-comments-o"></i></a>
+        </li>
+    </ul>
+    <div class="divider-header">Offline</div>
+    <ul class="chat-box">
+        <li ng-repeat="friend in friends" ng-if="!friendProfiles[friend.$id].online">
+            <div class="status-badge">
+                <img class="img-circle" sr-src='{{friendProfiles[friend.$id].profileImage}}' src='images/users.png' width="40" height="40">
+                <div class="small-badge bg-red"></div>
+            </div>
+            <b>
+                {{friendProfiles[friend.$id].username}}
+            </b>
+            <p>{{friendProfiles[friend.$id].email}}</p>
+            <a ui-sref="app.messages({friend:friendProfiles[friend.$id]})" class="btn btn-md no-border radius-all-100 btn-black"><i class="glyph-icon icon-comments-o"></i></a>
+        </li>
+    </ul>
+    <div class="divider-header">Chat Room</div>
+    <ul class="chat-box">
+        <li ng-repeat="room in rooms">
+            <div class="status-badge">
+                <img class="img-circle" sr-src='{{room.thumbnailUrlFromStorage}}' src='images/users.png' width="40" height="40">
+                <div class="small-badge bg-red"></div>
+            </div>
+            <b>
+                {{room.caption}}
+            </b>
+            <!-- <p>{{friendProfiles[friend.$id].email}}</p> -->
+            <a ui-sref="app.messages({room:room})" class="btn btn-md no-border radius-all-100 btn-black"><i class="glyph-icon icon-comments-o"></i></a>
+        </li>
+    </ul>
+</div>
